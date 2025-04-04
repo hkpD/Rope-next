@@ -2,14 +2,15 @@
 if exist "activate.bat" (
     call activate.bat
 )
-git init
-git remote add origin https://github.com/Alucard24/Rope.git
-git pull origin
-git checkout -f -b development origin/development
-git reset --hard origin/development
 
-git checkout -f -b main origin/main
-git reset --hard origin/main
+REM git init
+REM git remote add origin https://github.com/Alucard24/Rope.git
+REM git pull origin
+REM git checkout -f -b development origin/development
+REM git reset --hard origin/development
+
+REM git checkout -f -b main origin/main
+REM git reset --hard origin/main
 
 call Update_Rope_Next_Stable.bat
 
